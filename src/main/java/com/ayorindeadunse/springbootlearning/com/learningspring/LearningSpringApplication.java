@@ -1,13 +1,13 @@
-package com.ayorindeadunse.springbootlearning.com.learingspring;
+package com.ayorindeadunse.springbootlearning.com.learningspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LearingSpringApplication {
+public class LearningSpringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LearingSpringApplication.class, args);
+		SpringApplication.run(LearningSpringApplication.class, args);
 	}
 
 }

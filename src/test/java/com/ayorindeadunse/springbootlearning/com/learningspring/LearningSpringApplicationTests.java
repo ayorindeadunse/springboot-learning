@@ -1,10 +1,10 @@
-package com.ayorindeadunse.springbootlearning.com.learingspring;
+package com.ayorindeadunse.springbootlearning.com.learningspring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LearingSpringApplicationTests {
+class LearningSpringApplicationTests {
 
 	@Test
 	void contextLoads() {
