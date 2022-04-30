@@ -15,7 +15,7 @@ public class Reservation {
     private long room_id;
     @Column(name = "GUEST_ID")
     private long guest_id;
-    @Column(name = "DATE")
+    @Column(name = "RES_DATE")
     private Date reservationDate;
 
     public long getId() {
