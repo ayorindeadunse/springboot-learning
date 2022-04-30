@@ -49,4 +49,14 @@ public class Reservation {
     public void setRes_date(Date res_date) {
         this.res_date = res_date;
     }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "id=" + id +
+                ", room_id=" + room_id +
+                ", guest_id=" + guest_id +
+                ", res_date=" + res_date +
+                '}';
+    }
 }
