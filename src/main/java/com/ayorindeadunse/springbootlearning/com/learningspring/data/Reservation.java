@@ -1,45 +1,44 @@
 package com.ayorindeadunse.springbootlearning.com.learningspring.data;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Date;
 
 @Entity
-@Table(name = "RESERVATION")
+@Table(name="RESERVATION")
 public class Reservation {
-
     @Id
+    @Column(name="RESERVATION_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "RESERVATION_ID")
-    private long id;
-    @Column(name = "ROOM_ID")
-    private long room_id;
-    @Column(name = "GUEST_ID")
-    private long guest_id;
-    @Column(name = "RES_DATE")
+    private long reservationId;
+    @Column(name="ROOM_ID")
+    private long roomId;
+    @Column(name="GUEST_ID")
+    private long guestId;
+    @Column(name="RES_DATE")
     private Date reservationDate;
 
-    public long getId() {
-        return id;
+    public long getReservationId() {
+        return reservationId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setReservationId(long reservationId) {
+        this.reservationId = reservationId;
     }
 
-    public long getRoom_id() {
-        return room_id;
+    public long getRoomId() {
+        return roomId;
     }
 
-    public void setRoom_id(long room_id) {
-        this.room_id = room_id;
+    public void setRoomId(long roomId) {
+        this.roomId = roomId;
     }
 
-    public long getGuest_id() {
-        return guest_id;
+    public long getGuestId() {
+        return guestId;
     }
 
-    public void setGuest_id(long guest_id) {
-        this.guest_id = guest_id;
+    public void setGuestId(long guestId) {
+        this.guestId = guestId;
     }
 
     public Date getReservationDate() {
@@ -53,10 +52,10 @@ public class Reservation {
     @Override
     public String toString() {
         return "Reservation{" +
-                "id=" + id +
-                ", room_id=" + room_id +
-                ", guest_id=" + guest_id +
-                ", res_date=" + reservationDate +
+                "reservationId=" + reservationId +
+                ", roomId=" + roomId +
+                ", guestId=" + guestId +
+                ", reservationDate=" + reservationDate +
                 '}';
     }
 }

@@ -3,18 +3,18 @@ package com.ayorindeadunse.springbootlearning.com.learningspring.data;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "ROOM")
+@Table(name="ROOM")
 public class Room {
-@Id
-@GeneratedValue(strategy = GenerationType.AUTO)
-@Column(name = "ROOM_ID")
-private long id;
-@Column(name = "NAME")
-private String name;
-@Column(name = "ROOM_NUMBER")
-private String roomNumber;
-@Column(name = "BED_INFO")
-private String bedInfo;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="ROOM_ID")
+    private long id;
+    @Column(name="NAME")
+    private String name;
+    @Column(name="ROOM_NUMBER")
+    private String roomNumber;
+    @Column(name="BED_INFO")
+    private String bedInfo;
 
     public long getId() {
         return id;
